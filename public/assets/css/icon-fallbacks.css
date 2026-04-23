@@ -1,0 +1,8 @@
+/* Ensure collapse chevrons render even when Font Awesome fails to load. */
+.navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"]::after {
+  font-family: inherit;
+  font-weight: 700;
+  content: "\25BE";
+  font-size: 1rem;
+  line-height: 1;
+}
